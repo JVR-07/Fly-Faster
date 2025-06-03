@@ -1,12 +1,15 @@
 //components
-import Navbar from '../general-components/navbar/Navbar.jsx'
+import Navbar from '../global-components/navbar/Navbar.jsx'
 //styles
-import './styles/landing.css'
+import './style/landing.css'
 
 
 function Landing() {
     return (
-        <h1>Landing</h1>
+        <>
+            <Navbar />
+            <h1>Landing</h1>
+        </>
     )
 }
 

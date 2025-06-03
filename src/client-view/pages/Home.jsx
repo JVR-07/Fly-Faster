@@ -1,5 +1,5 @@
 //Styles
-import '../styles/home.css'
+import '../style/home.css'
 
 function Home() {
     return (
