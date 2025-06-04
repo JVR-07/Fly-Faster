@@ -1,0 +1,13 @@
+/* tags */
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* classes */
+.side-container{
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(120, 40, 212);
+}
