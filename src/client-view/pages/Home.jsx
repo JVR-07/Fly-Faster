@@ -3,7 +3,7 @@ import '../style/home.css'
 
 function Home() {
     return (
-        <h1>Hello World</h1>
+        <h1>Client root</h1>
     )
 }
 
