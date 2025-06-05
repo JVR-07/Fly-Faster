@@ -4,10 +4,15 @@ import { RiFlightTakeoffLine, RiAccountCircleFill } from "react-icons/ri";
 import { IoIosAirplane } from "react-icons/io";
 import { TbBuildingAirport } from "react-icons/tb";
 
+import { useState } from 'react';
+
 //style
 import './sidebar.css'
 
 function Sidebar() {
+
+    const [activeTab, setActiveTab] = useState('Dashboard')
+
     return (
         <>
             <nav className="side-container">
@@ -15,7 +20,7 @@ function Sidebar() {
                     <img className='logo' src='/vite.svg' />
                 </div>
                 <ul className='side-item'>
-                    <li><FaChartPie className='side-icon' />Dashboard</li>
+                    <li className={activeTab === 'Dashboard' ? 'active-tab' : ''}><FaChartPie className='side-icon' />Dashboard</li>
                     <li><RiFlightTakeoffLine className='side-icon' />Flight</li>
                     <li><FaUserTie className='side-icon' />Pilots</li>
                     <li><IoIosAirplane className='side-icon' />Airplanes</li>
