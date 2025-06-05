@@ -11,16 +11,20 @@ function Sidebar() {
     return (
         <>
             <nav className="side-container">
-                <img src='/vite.svg' />
-                <ul>
-                    <li><FaChartPie/>Dashboard</li>
-                    <li><RiFlightTakeoffLine/>Flight</li>
-                    <li><FaUserTie/>Pilots</li>
-                    <li><IoIosAirplane/>Airplanes</li>
-                    <li><FaUserFriends/>Crew</li>
-                    <li><TbBuildingAirport/>Airports</li>
+                <div className='logo-container'>
+                    <img className='logo' src='/vite.svg' />
+                </div>
+                <ul className='side-item'>
+                    <li><FaChartPie className='side-icon' />Dashboard</li>
+                    <li><RiFlightTakeoffLine className='side-icon' />Flight</li>
+                    <li><FaUserTie className='side-icon' />Pilots</li>
+                    <li><IoIosAirplane className='side-icon' />Airplanes</li>
+                    <li><FaUserFriends className='side-icon' />Crew</li>
+                    <li><TbBuildingAirport className='side-icon' />Airports</li>
                 </ul>
-                <RiAccountCircleFill/><a>Account</a>
+                <div className='side-item bottom-item'>
+                    <li><RiAccountCircleFill className='side-icon' /><a>Account</a></li>
+                </div>
             </nav>
         </>
     )
